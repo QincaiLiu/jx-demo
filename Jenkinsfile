@@ -34,7 +34,8 @@ pipeline {
 
         // Let's create tag in Git
         sh "jx step tag --version \$(cat VERSION)"
-        sh "echo test!"
+        sh "echo test  "
+        sh "pwd "
       }
     }
     stage('Promote to Environments') {
